@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MVPAndroid</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="progress_wait">正在加载，请等待...</string>
+
+    <string name="main_phones_text">请输入手机号</string>
+    <string name="main_query_text">查询</string>
+</resources>

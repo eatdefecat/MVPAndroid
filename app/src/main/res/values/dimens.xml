@@ -1,0 +1,37 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--标题栏宽度-->
+    <dimen name="title_head">49dp</dimen>
+
+    <!-- 进度条 -->
+    <dimen name="text_content">16.0sp</dimen>
+    <dimen name="text">18.0sp</dimen>
+
+    <dimen name="text_size_24">24sp</dimen>
+    <dimen name="text_size_20">20dp</dimen>
+    <dimen name="text_size_18">18dp</dimen>
+    <dimen name="text_size_16">16dp</dimen>
+    <dimen name="text_size_14">14dp</dimen>
+    <dimen name="text_size_12">12dp</dimen>
+    <dimen name="text_size_10">10dp</dimen>
+    <dimen name="text_size_13">13dp</dimen>
+    <dimen name="text_size_15">15dp</dimen>
+
+    <dimen name="view_pading_30">30dp</dimen>
+    <dimen name="view_pading_20">20dp</dimen>
+    <dimen name="view_pading_15">15dp</dimen>
+    <dimen name="view_pading_13">13dp</dimen>
+    <dimen name="view_pading_10">10dp</dimen>
+    <dimen name="view_pading_5">5dp</dimen>
+    <dimen name="view_margin_40">40dp</dimen>
+    <dimen name="view_margin_30">30dp</dimen>
+    <dimen name="view_margin_20">20dp</dimen>
+    <dimen name="view_margin_15">15dp</dimen>
+    <dimen name="view_margin_10">10dp</dimen>
+    <dimen name="view_margin_5">5dp</dimen>
+    <dimen name="view_margin_3">3dp</dimen>
+</resources>
