@@ -4,6 +4,8 @@ import android.util.Log;
 import com.dongze.mvpandroid.bean.HttpErrResult;
 import com.dongze.mvpandroid.bean.HttpResult;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 import java.lang.reflect.Type;
 import java.io.IOException;
 import okhttp3.ResponseBody;

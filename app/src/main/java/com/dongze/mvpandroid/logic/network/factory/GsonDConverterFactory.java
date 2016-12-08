@@ -1,8 +1,11 @@
 package com.dongze.mvpandroid.logic.network.factory;
 
+import com.dongze.mvpandroid.bean.HttpResult;
 import com.google.gson.Gson;
 import com.google.gson.TypeAdapter;
 import com.google.gson.reflect.TypeToken;
+
+import java.io.IOException;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Type;
 import okhttp3.RequestBody;

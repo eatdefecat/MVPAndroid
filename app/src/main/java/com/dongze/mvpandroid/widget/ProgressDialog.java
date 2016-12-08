@@ -35,6 +35,7 @@ public class ProgressDialog extends BaseDialog {
 
 	public void setmCancelable(boolean mCancelable) {
 		this.mCancelable = mCancelable;
+		setCancelable(mCancelable);
 	}
 
 	@Override

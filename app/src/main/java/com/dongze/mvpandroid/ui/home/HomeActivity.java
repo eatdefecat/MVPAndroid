@@ -43,7 +43,7 @@ public class HomeActivity extends BasicActivity<HomePresenter> implements HomeCo
                 String phone = mPhoneEt.getText().toString().trim();
                 if(TextUtils.isEmpty(phone)) return;
 
-                showProgressDialog(null, false);
+                showProgressDialog();
                 mPresenter.queryWeather(phone);
                 break;
         }

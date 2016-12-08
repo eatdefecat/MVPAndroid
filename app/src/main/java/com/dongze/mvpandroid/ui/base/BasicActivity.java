@@ -40,25 +40,7 @@ public abstract class BasicActivity<P extends BasePresenter> extends AppCompatAc
     public TextView mTitleRight;
     public TextView mTitleRight2;
     private ProgressDialog mPro;
-
-    private CompositeSubscription mCompositeSubscription;
     protected P mPresenter;
-
-    @Override
-    public CompositeSubscription getCompositeSubscription() {
-        if (mCompositeSubscription == null) {
-            mCompositeSubscription = new CompositeSubscription();
-        }
-        return mCompositeSubscription;
-    }
-
-    @Override
-    public void addSubscription(Subscription s) {
-        if (mCompositeSubscription == null) {
-            mCompositeSubscription = new CompositeSubscription();
-        }
-        mCompositeSubscription.add(s);
-    }
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -133,10 +115,6 @@ public abstract class BasicActivity<P extends BasePresenter> extends AppCompatAc
     @Override
     protected void onDestroy() {
         super.onDestroy();
-
-        if (mCompositeSubscription != null  && mCompositeSubscription.hasSubscriptions()) {
-            mCompositeSubscription.unsubscribe();
-        }
         if(mPresenter != null) {
             mPresenter.onDestroy();
         }
@@ -245,7 +223,7 @@ public abstract class BasicActivity<P extends BasePresenter> extends AppCompatAc
         if(mPro == null) {
             mPro = new ProgressDialog(this);
         }
-        mPro.setCancelable(cancelable);
+        mPro.setmCancelable(cancelable);
         mPro.setProgressMsg(msg == null ? "正在加载,请稍后..." : msg);
         if(!mPro.isShowing()){
             mPro.show();

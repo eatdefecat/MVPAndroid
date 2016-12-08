@@ -17,7 +17,6 @@ import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 public class HttpManager {
 
-    public static final String TAG = "HttpManager";
     public static final String SERVER = GlobalVar.SERVER;//服务器根地址
 
     private HttpService mHttpService;
